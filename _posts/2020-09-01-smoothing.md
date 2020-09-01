@@ -66,7 +66,7 @@ The last equality holds because $$C(w_{i-n+2} \ldots w_i) \geq C(w_{i-n+1} \ldot
 
 ## Kneser-Ney Smoothing
 
-Modified Kneser-Ney (MKN) smoothing is widely used in language modeling, but to my knowledge, there's no public work that uses any kind of Kneser-Ney smoothing in password guessing. I've implemented MKN smoothing and found that it performs quite well. One benefit of MKN smoothing is that, like other interpolation methods, MKN enables you to use Markov models of larger order (like 6, 8, or 10) without having to worry about sparsity (but you should definitely worry about memory usage). I observe a 0.02-0.05 raise in cracking rate compared to other Markov models with 10^7 guesses.
+Modified Kneser-Ney (MKN) smoothing is widely used in language modeling, but to my knowledge, there's no public work that uses any kind of Kneser-Ney smoothing in password guessing. I've implemented MKN smoothing and found that it performs quite well. One benefit of MKN smoothing is that, like other interpolation methods, MKN enables you to use Markov models of larger order (like 6, 8, or 10) without having to worry about sparsity (but you should definitely worry about memory usage). I observe a 0.02-0.05 raise (about 10% relatively) in cracking rate compared to other Markov models with 10^7 guesses.
 
 MKN is rather complicated and I just don't understand it well even now. I think it's helpful to see Kneser-Ney smoothing as a approximate inference scheme in the hierarchical Pitman-Yor language model, as in "[A Bayesian Interpretation of Interpolated Kneser-Ney](http://www.stats.ox.ac.uk/~teh/research/compling/hpylm.pdf)" by Teh.
 
