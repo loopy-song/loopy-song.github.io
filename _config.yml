@@ -1,0 +1,47 @@
+# Setup
+title:  Yuanming Song
+tagline: Yuanming Song's blog
+url: https://loopy-song.github.io
+paginate: 3
+baseurl: ""
+permalink: pretty
+highlighter: rouge
+future: true
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+pages_list:
+  Home: '/'       
+  About: '/about'
+  Archive: '/archive'
+  Misc: '/misc'
+
+excerpt_separator:  '<!-- more -->'
